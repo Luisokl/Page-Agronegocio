@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap');
+
 section#slide {
     margin: 0 auto;
     padding: 0;
@@ -35,11 +37,31 @@ section#slide {
     opacity: 0.3;
 }
 
+.slide-description {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide-description h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: clamp(1rem, 8vw, 5rem);
+    color: #FFF;
+    margin-bottom: 10px;
+}
+.slide-description p {
+    font-family: 'Rubik', sans-serif;
+    color: #FFF;
+}
+
 .nav-manual,
 .nav-auto {
     position: absolute;
     width: 100%;
-    margin-top: 45%;
+    margin-top: 58%;
     display: flex;
     justify-content: center;
 }
@@ -75,4 +97,27 @@ section#slide {
 }
 #radio3:checked ~ .first {
     margin-left: -50%;
+}
+
+@media (min-width: 1440px) {
+    .nav-manual,
+    .nav-auto {
+        margin-top: 45%;
+    }
+}
+
+@media (max-width: 425px) {
+    .nav-manual,
+    .nav-auto {
+        margin-top: 110%;
+    }
+    
+    .slide-box .img-desktop {
+        display: none;
+    }
+    .slide-box .img-mobile {
+        display: block;
+        height: 60vh;
+        object-fit: cover;
+    }
 }

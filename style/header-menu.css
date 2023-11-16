@@ -9,7 +9,8 @@ header {
 }
 
 .menu {
-    max-width: 1280px;
+    width: 100%;
+    max-width: 1024px;
     height: 70px;
     margin-inline: auto;
 
@@ -30,9 +31,13 @@ header {
 }
 
 .nav-list a {
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    padding-block: 16px;
+    padding-block: 8px;
     color: #FFF;
+}
+.nav-list li:hover a {
+    border-bottom: 3px solid #FFF;
 }
 
 .hamburger {
@@ -83,7 +88,7 @@ header {
     .nav-list a {
         font-size: 28px;
         color: #fff;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         opacity: 0;
     }
 
