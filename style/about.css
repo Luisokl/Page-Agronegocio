@@ -38,7 +38,7 @@ section#about {
     margin: 0 auto;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 250px);
     gap: 10px;
     text-align: center;
 }
