@@ -1,48 +1,64 @@
 section#about {
-    width: 100%;
-    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     padding: 80px 0;
 }
 
 .container-about {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow: hidden;
 }
 
-.container-about .about-title {
-    position: relative;
-    width: 50%;
+.container-about > div {
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: auto;
-    padding: 20px;
-}
-.about-title h3 {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.about-title h2 {
-    font-size: 3rem;
-    line-height: 50px;
-    margin-bottom: 20px;
-}
-.about-title p {
-    margin-bottom: 10px;
-}
+} 
 
 .container-about .about-img {
-    width: 50%;
+    width: 45%;
     height: 600px;
     background-image: url('/img/img-about/cesta\ tomate.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 5px;
-   
+}
+
+.container-about .about-description {
+    position: relative;
+    width: 50%;
+}
+
+.about-description h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about-description h2 {
+    font-size: 3rem;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.about-description p {
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container-about > div {
+        flex-direction: column;
+    }
+    .container-about .about-img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .container-about .about-description {
+        width: 100%;
+    }
 }
 
 
