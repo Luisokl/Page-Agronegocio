@@ -1,9 +1,8 @@
 section#about {
     width: 100%;
-    max-width: 1020px;
     margin: 0 auto;
     height: 100vh;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-title {
@@ -23,30 +22,6 @@ section#about {
     font-size: 28px;
 }
 
-.about-video {
-    display: flex;
-}
-.about-video iframe {
-    width: 1000px;
-    height: 550px;
-    margin: 0 auto 50px auto;
-}
 
 
-.about-widget {
-    width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 250px);
-    gap: 10px;
-    text-align: center;
-}
 
-.widget-box img {
-    width: 50px;
-    margin-bottom: 20px;
-}
-.widget-box h3 {
-    margin-bottom: 10px;
-}
