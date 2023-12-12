@@ -4,14 +4,14 @@ section#content {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #d9d2df57;
+    background: #d9d2dfa4;
 }
 
 .content-widget {
     margin: 0 auto;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(4, 240px);
     gap: 30px;
     text-align: center;
 }
@@ -43,7 +43,7 @@ section#content {
 
 @media screen and (max-width: 768px) {
     .content-widget {
-        grid-template-columns: repeat(1, 250px);
+        grid-template-columns: repeat(1, 350px);
     }
     .content-box {
         margin-bottom: 20px;
